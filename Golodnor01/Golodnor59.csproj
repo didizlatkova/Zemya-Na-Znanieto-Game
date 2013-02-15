@@ -1,0 +1,1194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{617E210D-3729-465C-AE9C-EC75C5F3653F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Golodnor01</RootNamespace>
+    <AssemblyName>Golodnor01</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Земя на Знанието</ProductName>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>earth.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>04BE9C79A3F474879B411F779C786207CD9D3019</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Golodnor52_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSet.cs">
+      <DependentUpon>DataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Diff\FormDiff1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diff\FormDiff1.Designer.cs">
+      <DependentUpon>FormDiff1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diff\FormDiff10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diff\FormDiff10.Designer.cs">
+      <DependentUpon>FormDiff10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diff\FormDiff2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diff\FormDiff2.Designer.cs">
+      <DependentUpon>FormDiff2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diff\FormDiff3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diff\FormDiff3.Designer.cs">
+      <DependentUpon>FormDiff3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diff\FormDiff4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diff\FormDiff4.Designer.cs">
+      <DependentUpon>FormDiff4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diff\FormDiff5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diff\FormDiff5.Designer.cs">
+      <DependentUpon>FormDiff5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diff\FormDiff6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diff\FormDiff6.Designer.cs">
+      <DependentUpon>FormDiff6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diff\FormDiff7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diff\FormDiff7.Designer.cs">
+      <DependentUpon>FormDiff7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diff\FormDiff8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diff\FormDiff8.Designer.cs">
+      <DependentUpon>FormDiff8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diff\FormDiff9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diff\FormDiff9.Designer.cs">
+      <DependentUpon>FormDiff9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diff\FormDiffMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diff\FormDiffMessage.Designer.cs">
+      <DependentUpon>FormDiffMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormAdminLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormAdminLog.Designer.cs">
+      <DependentUpon>FormAdminLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormDelMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormDelMessage.Designer.cs">
+      <DependentUpon>FormDelMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Escape\FormEscape.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Escape\FormEscape.Designer.cs">
+      <DependentUpon>FormEscape.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Escape\FormEscapePaper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Escape\FormEscapePaper.Designer.cs">
+      <DependentUpon>FormEscapePaper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\FormMe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\FormMe.Designer.cs">
+      <DependentUpon>FormMe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\FormMusic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\FormMusic.Designer.cs">
+      <DependentUpon>FormMusic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\FormChangePlayerMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\FormChangePlayerMessage.Designer.cs">
+      <DependentUpon>FormChangePlayerMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\FormChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\FormChart.Designer.cs">
+      <DependentUpon>FormChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\FormEnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\FormEnd.Designer.cs">
+      <DependentUpon>FormEnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\FormExit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\FormExit.Designer.cs">
+      <DependentUpon>FormExit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\FormPlayerMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\FormPlayerMessage.Designer.cs">
+      <DependentUpon>FormPlayerMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game\FormGame7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game\FormGame7.Designer.cs">
+      <DependentUpon>FormGame7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\FormInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\FormInfo.Designer.cs">
+      <DependentUpon>FormInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game\FormGame5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game\FormGame5.Designer.cs">
+      <DependentUpon>FormGame5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game\FormGame6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game\FormGame6.Designer.cs">
+      <DependentUpon>FormGame6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game\FormGame4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game\FormGame4.Designer.cs">
+      <DependentUpon>FormGame4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game\FormGame3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game\FormGame3.Designer.cs">
+      <DependentUpon>FormGame3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game\FormGame2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game\FormGame2.Designer.cs">
+      <DependentUpon>FormGame2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game\FormGame1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game\FormGame1.Designer.cs">
+      <DependentUpon>FormGame1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\FormGameMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\FormGameMessage.Designer.cs">
+      <DependentUpon>FormGameMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riddle\FormRiddle6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Riddle\FormRiddle6.Designer.cs">
+      <DependentUpon>FormRiddle6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riddle\FormRiddle5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Riddle\FormRiddle5.Designer.cs">
+      <DependentUpon>FormRiddle5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riddle\FormRiddle4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Riddle\FormRiddle4.Designer.cs">
+      <DependentUpon>FormRiddle4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riddle\FormRiddle3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Riddle\FormRiddle3.Designer.cs">
+      <DependentUpon>FormRiddle3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riddle\FormRiddle2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Riddle\FormRiddle2.Designer.cs">
+      <DependentUpon>FormRiddle2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riddle\FormRiddle1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Riddle\FormRiddle1.Designer.cs">
+      <DependentUpon>FormRiddle1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riddle\FormRiddleMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Riddle\FormRiddleMessage.Designer.cs">
+      <DependentUpon>FormRiddleMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Puzzle\FormPuzzle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Puzzle\FormPuzzle.Designer.cs">
+      <DependentUpon>FormPuzzle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Puzzle\FormPuzzleMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Puzzle\FormPuzzleMessage.Designer.cs">
+      <DependentUpon>FormPuzzleMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hangman\FormHangMan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hangman\FormHangMan.Designer.cs">
+      <DependentUpon>FormHangMan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shop\FormHintBuy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shop\FormHintBuy.Designer.cs">
+      <DependentUpon>FormHintBuy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shop\FormHintMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shop\FormHintMessage.Designer.cs">
+      <DependentUpon>FormHintMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructions\FormInstr1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instructions\FormInstr1.Designer.cs">
+      <DependentUpon>FormInstr1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructions\FormInstr2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instructions\FormInstr2.Designer.cs">
+      <DependentUpon>FormInstr2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructions\FormInstr3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instructions\FormInstr3.Designer.cs">
+      <DependentUpon>FormInstr3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\FormMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\FormMap.Designer.cs">
+      <DependentUpon>FormMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\FormQuestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\FormQuestion.Designer.cs">
+      <DependentUpon>FormQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms.cs" />
+    <Compile Include="Shop\FormShop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shop\FormShop.Designer.cs">
+      <DependentUpon>FormShop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalVars.cs" />
+    <Compile Include="Hangman\FormHangmanMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hangman\FormHangmanMain.Designer.cs">
+      <DependentUpon>FormHangmanMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hangman\FormHangmanMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hangman\FormHangmanMessage.Designer.cs">
+      <DependentUpon>FormHangmanMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Methods.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Diff\FormDiff1.resx">
+      <DependentUpon>FormDiff1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diff\FormDiff10.resx">
+      <DependentUpon>FormDiff10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diff\FormDiff2.resx">
+      <DependentUpon>FormDiff2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diff\FormDiff3.resx">
+      <DependentUpon>FormDiff3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diff\FormDiff4.resx">
+      <DependentUpon>FormDiff4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diff\FormDiff5.resx">
+      <DependentUpon>FormDiff5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diff\FormDiff6.resx">
+      <DependentUpon>FormDiff6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diff\FormDiff7.resx">
+      <DependentUpon>FormDiff7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diff\FormDiff8.resx">
+      <DependentUpon>FormDiff8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diff\FormDiff9.resx">
+      <DependentUpon>FormDiff9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diff\FormDiffMessage.resx">
+      <DependentUpon>FormDiffMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormAdminLog.resx">
+      <DependentUpon>FormAdminLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormDelMessage.resx">
+      <DependentUpon>FormDelMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Escape\FormEscape.resx">
+      <DependentUpon>FormEscape.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Escape\FormEscapePaper.resx">
+      <DependentUpon>FormEscapePaper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\FormMe.resx">
+      <DependentUpon>FormMe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\FormMusic.resx">
+      <DependentUpon>FormMusic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\FormChangePlayerMessage.resx">
+      <DependentUpon>FormChangePlayerMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\FormChart.resx">
+      <DependentUpon>FormChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\FormEnd.resx">
+      <DependentUpon>FormEnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\FormExit.resx">
+      <DependentUpon>FormExit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\FormPlayerMessage.resx">
+      <DependentUpon>FormPlayerMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game\FormGame7.resx">
+      <DependentUpon>FormGame7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\FormInfo.resx">
+      <DependentUpon>FormInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game\FormGame5.resx">
+      <DependentUpon>FormGame5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game\FormGame6.resx">
+      <DependentUpon>FormGame6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game\FormGame4.resx">
+      <DependentUpon>FormGame4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game\FormGame3.resx">
+      <DependentUpon>FormGame3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game\FormGame2.resx">
+      <DependentUpon>FormGame2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game\FormGame1.resx">
+      <DependentUpon>FormGame1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\FormGameMessage.resx">
+      <DependentUpon>FormGameMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Riddle\FormRiddle5.resx">
+      <DependentUpon>FormRiddle5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Riddle\FormRiddle3.resx">
+      <DependentUpon>FormRiddle3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Riddle\FormRiddle2.resx">
+      <DependentUpon>FormRiddle2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Riddle\FormRiddle1.resx">
+      <DependentUpon>FormRiddle1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Riddle\FormRiddle4.resx">
+      <DependentUpon>FormRiddle4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Riddle\FormRiddle6.resx">
+      <DependentUpon>FormRiddle6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Riddle\FormRiddleMessage.resx">
+      <DependentUpon>FormRiddleMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Puzzle\FormPuzzle.resx">
+      <DependentUpon>FormPuzzle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Puzzle\FormPuzzleMessage.resx">
+      <DependentUpon>FormPuzzleMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shop\FormHintBuy.resx">
+      <DependentUpon>FormHintBuy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shop\FormHintMessage.resx">
+      <DependentUpon>FormHintMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructions\FormInstr1.resx">
+      <DependentUpon>FormInstr1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructions\FormInstr2.resx">
+      <DependentUpon>FormInstr2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructions\FormInstr3.resx">
+      <DependentUpon>FormInstr3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\FormMap.resx">
+      <DependentUpon>FormMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\FormQuestion.resx">
+      <DependentUpon>FormQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shop\FormShop.resx">
+      <DependentUpon>FormShop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hangman\FormHangMan.resx">
+      <DependentUpon>FormHangMan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hangman\FormHangmanMain.resx">
+      <DependentUpon>FormHangmanMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hangman\FormHangmanMessage.resx">
+      <DependentUpon>FormHangmanMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="DataSet.xsc">
+      <DependentUpon>DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet.xss">
+      <DependentUpon>DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Golodnor52_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\advokat_modern_regular.ttf" />
+    <None Include="Resources\Bookman Old Style.ttf" />
+    <None Include="Resources\buttonBrown2Big21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonExit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonBrownYes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonBrownNo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpaperInstr.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrowLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrowRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrowDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonsYellowRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonsYellowBrown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonsYellowGray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kangaroo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\-one.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descr5050.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descr-one.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descrHeart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shelves.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coins.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpaperMain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exitForm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50-50Small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart_piew1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart_piew2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart_piew3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart_piew4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart_piew5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart_piew6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kangarooSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\-oneSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QBackgroundRed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5 SP2</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrowDownNew.png" />
+    <None Include="Resources\FlickerWhite.jpg" />
+    <None Include="Resources\Flicker.jpg" />
+    <None Include="Resources\chart_piew0.png" />
+    <None Include="Resources\QBackgroundGreen.jpg" />
+    <None Include="Resources\QBackgroundBrown.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="earth.ico" />
+    <Content Include="Music\Intro.mp3" />
+    <Content Include="Music\Level1.mp3" />
+    <Content Include="Music\Level2.mp3" />
+    <Content Include="Music\Level3.mp3" />
+    <Content Include="Music\Level4.mp3" />
+    <Content Include="Questions.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Questions_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Questions.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\NoNotes.png" />
+    <None Include="Resources\blank2.png" />
+    <None Include="Resources\buttonGraycircle.png" />
+    <None Include="Resources\buttonGrayBigger.png" />
+    <None Include="Resources\buttonBrownBigger.png" />
+    <None Include="Resources\buttonBrownDialogCancel.png" />
+    <None Include="Resources\buttonBrownDialogSmall.png" />
+    <None Include="Resources\buttonBrownDialog.png" />
+    <None Include="Resources\buttonBrownBig.png" />
+    <None Include="Resources\buttonMe.png" />
+    <None Include="Resources\me.jpg" />
+    <None Include="Resources\wallpaperLoading.jpg" />
+    <None Include="Resources\AthertoncoverFinalNew.jpg" />
+    <None Include="Resources\fireplaceEsc.png" />
+    <None Include="Resources\window.png" />
+    <None Include="Resources\wallpaperEscape.jpg" />
+    <None Include="Resources\table.png" />
+    <None Include="Resources\screwTool.png" />
+    <None Include="Resources\screw.png" />
+    <None Include="Resources\openBook.png" />
+    <None Include="Resources\keyTool.png" />
+    <None Include="Resources\keyButton.png" />
+    <None Include="Resources\glassFullTool.png" />
+    <None Include="Resources\glassEmptyTool.png" />
+    <None Include="Resources\glassButton.png" />
+    <None Include="Resources\fishbowl.png" />
+    <None Include="Resources\fireplaceNoKey.png" />
+    <None Include="Resources\fireplaceNoDoors.png" />
+    <None Include="Resources\fireplaceKey.png" />
+    <None Include="Resources\fireplaceDoorsButton.png" />
+    <None Include="Resources\fireButton.png" />
+    <None Include="Resources\doorLockButton.png" />
+    <None Include="Resources\door.png" />
+    <None Include="Resources\deskandsupplies.png" />
+    <None Include="Resources\desk.png" />
+    <None Include="Resources\bookButton.png" />
+    <None Include="Resources\binDown.png" />
+    <None Include="Resources\bin.png" />
+    <None Include="Resources\descrJump.png" />
+    <None Include="Resources\Notes.png" />
+    <None Include="Resources\buttonBrownArrow.png" />
+    <None Include="Resources\wallpaperAdmin.jpg" />
+    <None Include="Resources\buttonBrownCancel.png" />
+    <None Include="Resources\buttonBrownAdmin.png" />
+    <None Include="Resources\buttonBrownContinue.png" />
+    <None Include="Resources\buttonRedQ.png" />
+    <None Include="Resources\buttonGreenQ.png" />
+    <None Include="Resources\buttonGrayQ.png" />
+    <None Include="Resources\buttonBrownQ.png" />
+    <None Include="Resources\stickman.png" />
+    <None Include="Resources\wallpaperChart.jpg" />
+    <None Include="Resources\buttonBrownUser.png" />
+    <None Include="Resources\buttonBrownChart.png" />
+    <None Include="Resources\lineEnd.png" />
+    <None Include="Resources\info29_1.png" />
+    <None Include="Resources\QBackgroundGrey.jpg" />
+    <None Include="Resources\info34_1.jpg" />
+    <None Include="Resources\info33_2.jpg" />
+    <None Include="Resources\info33_1.png" />
+    <None Include="Resources\info31_1.jpg" />
+    <None Include="Resources\info28_1.jpg" />
+    <None Include="Resources\info24_1.jpg" />
+    <None Include="Resources\info23_2.jpg" />
+    <None Include="Resources\info23_1.jpg" />
+    <None Include="Resources\info22_2.JPG" />
+    <None Include="Resources\info16_1.jpg" />
+    <None Include="Resources\arrowGoldenRight.png" />
+    <None Include="Resources\arrowGoldenLeft.png" />
+    <None Include="Resources\buttonBrownNapred2.png" />
+    <None Include="Resources\buttonBrownSkip2.png" />
+    <None Include="Resources\info69_2.png" />
+    <None Include="Resources\info69_1.jpg" />
+    <None Include="Resources\info68_2.jpg" />
+    <None Include="Resources\info68_1.jpg" />
+    <None Include="Resources\info67_2.jpg" />
+    <None Include="Resources\info67_1.png" />
+    <None Include="Resources\info66_2.jpg" />
+    <None Include="Resources\info66_1.png" />
+    <None Include="Resources\info65_2.jpg" />
+    <None Include="Resources\info65_1.jpg" />
+    <None Include="Resources\info64_2.jpg" />
+    <None Include="Resources\info64_1.png" />
+    <None Include="Resources\info63_2.jpg" />
+    <None Include="Resources\info63_1.png" />
+    <None Include="Resources\info62_2.jpg" />
+    <None Include="Resources\info62_1.jpg" />
+    <None Include="Resources\info61_2.jpg" />
+    <None Include="Resources\info61_1.png" />
+    <None Include="Resources\info60_2.jpg" />
+    <None Include="Resources\info60_1.jpg" />
+    <None Include="Resources\info59_2.jpg" />
+    <None Include="Resources\info59_1.jpg" />
+    <None Include="Resources\info58_2.jpg" />
+    <None Include="Resources\info58_1.png" />
+    <None Include="Resources\info57_2.jpg" />
+    <None Include="Resources\info57_1.png" />
+    <None Include="Resources\info56_2.png" />
+    <None Include="Resources\info56_1.png" />
+    <None Include="Resources\info55_2.jpg" />
+    <None Include="Resources\info55_1.jpg" />
+    <None Include="Resources\info54_2.jpg" />
+    <None Include="Resources\info54_1.jpg" />
+    <None Include="Resources\info53_2.jpg" />
+    <None Include="Resources\info53_1.jpg" />
+    <None Include="Resources\info52_2.gif" />
+    <None Include="Resources\info52_1.jpg" />
+    <None Include="Resources\info51_2.jpg" />
+    <None Include="Resources\info51_1.jpg" />
+    <None Include="Resources\info50_2.jpg" />
+    <None Include="Resources\info50_1.png" />
+    <None Include="Resources\info49_2.jpg" />
+    <None Include="Resources\info49_1.jpg" />
+    <None Include="Resources\info48_2.png" />
+    <None Include="Resources\info48_1.png" />
+    <None Include="Resources\info47_2.jpg" />
+    <None Include="Resources\info47_1.jpg" />
+    <None Include="Resources\info46_2.jpg" />
+    <None Include="Resources\info46_1.jpg" />
+    <None Include="Resources\info45_2.jpg" />
+    <None Include="Resources\info45_1.jpg" />
+    <None Include="Resources\info44_2.jpg" />
+    <None Include="Resources\info44_1.jpg" />
+    <None Include="Resources\info43_2.jpg" />
+    <None Include="Resources\info43_1.jpg" />
+    <None Include="Resources\info42_2.jpg" />
+    <None Include="Resources\info42_1.gif" />
+    <None Include="Resources\info41_2.jpg" />
+    <None Include="Resources\info41_1.jpg" />
+    <None Include="Resources\info40_2.jpg" />
+    <None Include="Resources\info40_1.JPG" />
+    <None Include="Resources\info39_2.jpg" />
+    <None Include="Resources\info39_1.png" />
+    <None Include="Resources\info38_2.jpg" />
+    <None Include="Resources\info38_1.jpg" />
+    <None Include="Resources\info37_2.gif" />
+    <None Include="Resources\info37_1.jpg" />
+    <None Include="Resources\info36_2.png" />
+    <None Include="Resources\info36_1.png" />
+    <None Include="Resources\info35_2.jpg" />
+    <None Include="Resources\info35_1.png" />
+    <None Include="Resources\info34_2.gif" />
+    <None Include="Resources\info33_2.png" />
+    <None Include="Resources\info33_1.jpg" />
+    <None Include="Resources\info32_2.jpg" />
+    <None Include="Resources\info32_1.jpg" />
+    <None Include="Resources\info31_2.jpg" />
+    <None Include="Resources\info31_1.png" />
+    <None Include="Resources\info30_2.jpg" />
+    <None Include="Resources\info30_1.png" />
+    <None Include="Resources\info29_2.jpg" />
+    <None Include="Resources\info29_1.jpg" />
+    <None Include="Resources\info28_2.jpg" />
+    <None Include="Resources\info27_2.png" />
+    <None Include="Resources\info27_1.jpg" />
+    <None Include="Resources\info26_2.jpg" />
+    <None Include="Resources\info26_1.png" />
+    <None Include="Resources\info25_2.png" />
+    <None Include="Resources\info25_1.jpg" />
+    <None Include="Resources\info24_2.jpg" />
+    <None Include="Resources\info24_1.png" />
+    <None Include="Resources\info22_1.jpg" />
+    <None Include="Resources\info21_2.jpg" />
+    <None Include="Resources\info21_1.jpg" />
+    <None Include="Resources\info20_2.png" />
+    <None Include="Resources\info20_1.jpg" />
+    <None Include="Resources\info14_2.jpg" />
+    <None Include="Resources\info14_1.jpg" />
+    <None Include="Resources\info2_2.jpg" />
+    <None Include="Resources\info2_1.jpg" />
+    <None Include="Resources\info10_2.jpg" />
+    <None Include="Resources\info1_2.jpg" />
+    <None Include="Resources\info1_1.jpg" />
+    <None Include="Resources\info7_2.png" />
+    <None Include="Resources\info19_2.jpg" />
+    <None Include="Resources\info19_1.jpg" />
+    <None Include="Resources\info18_2.jpg" />
+    <None Include="Resources\info18_1.png" />
+    <None Include="Resources\info17_2.png" />
+    <None Include="Resources\info17_1.png" />
+    <None Include="Resources\info16_2.png" />
+    <None Include="Resources\info16_1.png" />
+    <None Include="Resources\info15_2.jpg" />
+    <None Include="Resources\info15_1.jpg" />
+    <None Include="Resources\info13_2.jpg" />
+    <None Include="Resources\info13_1.png" />
+    <None Include="Resources\info12_2.jpg" />
+    <None Include="Resources\info12_1.jpg" />
+    <None Include="Resources\info11_2.jpg" />
+    <None Include="Resources\info11_1.jpg" />
+    <None Include="Resources\info10_1.jpg" />
+    <None Include="Resources\info9_2.jpg" />
+    <None Include="Resources\info9_1.jpg" />
+    <None Include="Resources\info8_2.jpg" />
+    <None Include="Resources\info8_1.png" />
+    <None Include="Resources\info7_1.png" />
+    <None Include="Resources\info6_2.png" />
+    <None Include="Resources\info6_1.png" />
+    <None Include="Resources\info5_2.jpg" />
+    <None Include="Resources\info5_1.jpg" />
+    <None Include="Resources\info4_2.jpg" />
+    <None Include="Resources\info4_1.jpg" />
+    <None Include="Resources\info3_2.JPG" />
+    <None Include="Resources\info3_1.png" />
+    <None Include="Resources\info2_1.png" />
+    <None Include="Resources\info0_2.jpg" />
+    <None Include="Resources\info0_1.png" />
+    <None Include="Resources\buttonBrownOkLong.png" />
+    <None Include="Resources\info1Img2.jpg" />
+    <None Include="Resources\info1Img1.jpg" />
+    <None Include="Resources\wallpaperInfo.png" />
+    <None Include="Resources\football.png" />
+    <None Include="Resources\jug8-8_liters.png" />
+    <None Include="Resources\jug8-7_liters.png" />
+    <None Include="Resources\jug8-6_liters.png" />
+    <None Include="Resources\jug8-5_liters.png" />
+    <None Include="Resources\jug8-4_liters.png" />
+    <None Include="Resources\jug8-3_liters.png" />
+    <None Include="Resources\jug8-2_liters.png" />
+    <None Include="Resources\jug8-1_liter.png" />
+    <None Include="Resources\jug8.png" />
+    <None Include="Resources\jug5-5_liters.png" />
+    <None Include="Resources\jug5-4_liters.png" />
+    <None Include="Resources\jug5-3_liters.png" />
+    <None Include="Resources\jug5-2_liters.png" />
+    <None Include="Resources\jug5-1_liter.png" />
+    <None Include="Resources\jug5.png" />
+    <None Include="Resources\jug3-3_liters.png" />
+    <None Include="Resources\jug3-2_liters.png" />
+    <None Include="Resources\jug3-1_liter.png" />
+    <None Include="Resources\jug3.png" />
+    <None Include="Resources\wallpaperMatches.jpg" />
+    <None Include="Resources\matchAcross.png" />
+    <None Include="Resources\match.png" />
+    <None Include="Resources\buttonGrayRestart.png" />
+    <None Include="Resources\matchP.png" />
+    <None Include="Resources\lamp.png" />
+    <None Include="Resources\fireplace.PNG" />
+    <None Include="Resources\candle.png" />
+    <None Include="Resources\killer.png" />
+    <None Include="Resources\shark.png" />
+    <None Include="Resources\lion.png" />
+    <None Include="Resources\FO3_Contract_Killer.png" />
+    <None Include="Resources\fire.png" />
+    <None Include="Resources\buttonGrayOk.png" />
+    <None Include="Resources\wallpaperRiddle.jpg" />
+    <None Include="Resources\buttonNewGame2.png" />
+    <None Include="Resources\buttonNewGame.png" />
+    <None Include="Resources\arrowDiffGray2.png" />
+    <None Include="Resources\arrowDiffGray.png" />
+    <None Include="Resources\buttonGrayskip.png" />
+    <None Include="Resources\buttonGrayNapred.png" />
+    <None Include="Resources\ИР3.psd.jpg" />
+    <None Include="Resources\blue_button21.png" />
+    <None Include="Resources\r+f4.png" />
+    <None Include="Resources\ИР4.jpg" />
+    <None Include="Resources\rocket-golodnor3.png" />
+    <None Include="Resources\glossy_blue_button2.png" />
+    <None Include="Resources\Pig4.jpg" />
+    <None Include="Resources\Equasion2.png" />
+    <None Include="Resources\buttonOk2.png" />
+    <None Include="Resources\buttonBrownSkip.png" />
+    <None Include="Resources\buttonBrownNapred.png" />
+    <None Include="Resources\puzzle12D.jpg" />
+    <None Include="Resources\puzzle12C.jpg" />
+    <None Include="Resources\puzzle12B.jpg" />
+    <None Include="Resources\puzzle12A.jpg" />
+    <None Include="Resources\puzzle11Q.jpg" />
+    <None Include="Resources\puzzle11D.jpg" />
+    <None Include="Resources\puzzle11C.jpg" />
+    <None Include="Resources\puzzle11B.jpg" />
+    <None Include="Resources\puzzle11A.jpg" />
+    <None Include="Resources\arrowGolden.png" />
+    <None Include="Resources\wife.png" />
+    <None Include="Resources\maid.png" />
+    <None Include="Resources\gardener.png" />
+    <None Include="Resources\cook.png" />
+    <None Include="Resources\wallpaperPuzzle.jpg" />
+    <None Include="Resources\questionMark.png" />
+    <None Include="Resources\puzzle9Q.jpg" />
+    <None Include="Resources\puzzle9D.jpg" />
+    <None Include="Resources\puzzle9C.jpg" />
+    <None Include="Resources\puzzle9B.jpg" />
+    <None Include="Resources\puzzle9A.jpg" />
+    <None Include="Resources\puzzle8Q.jpg" />
+    <None Include="Resources\puzzle8D.jpg" />
+    <None Include="Resources\puzzle8C.jpg" />
+    <None Include="Resources\puzzle8B.jpg" />
+    <None Include="Resources\puzzle8A.jpg" />
+    <None Include="Resources\puzzle7Q.jpg" />
+    <None Include="Resources\puzzle7D.jpg" />
+    <None Include="Resources\puzzle7C.jpg" />
+    <None Include="Resources\puzzle7B.jpg" />
+    <None Include="Resources\puzzle7A.jpg" />
+    <None Include="Resources\puzzle6Q.jpg" />
+    <None Include="Resources\puzzle6D.jpg" />
+    <None Include="Resources\puzzle6C.jpg" />
+    <None Include="Resources\puzzle6B.jpg" />
+    <None Include="Resources\puzzle6A.jpg" />
+    <None Include="Resources\puzzle5Q.jpg" />
+    <None Include="Resources\puzzle5D.jpg" />
+    <None Include="Resources\puzzle5C.jpg" />
+    <None Include="Resources\puzzle5B.jpg" />
+    <None Include="Resources\puzzle5A.jpg" />
+    <None Include="Resources\puzzle4Q.jpg" />
+    <None Include="Resources\puzzle4D.jpg" />
+    <None Include="Resources\puzzle4C.jpg" />
+    <None Include="Resources\puzzle4B.jpg" />
+    <None Include="Resources\puzzle4A.jpg" />
+    <None Include="Resources\puzzle3Q.jpg" />
+    <None Include="Resources\puzzle3D.jpg" />
+    <None Include="Resources\puzzle3C.jpg" />
+    <None Include="Resources\puzzle3B.jpg" />
+    <None Include="Resources\puzzle3A.jpg" />
+    <None Include="Resources\puzzle2Q.jpg" />
+    <None Include="Resources\puzzle2D.jpg" />
+    <None Include="Resources\puzzle2C.jpg" />
+    <None Include="Resources\puzzle2B.jpg" />
+    <None Include="Resources\puzzle2A.jpg" />
+    <None Include="Resources\puzzle1Q.jpg" />
+    <None Include="Resources\puzzle1D.jpg" />
+    <None Include="Resources\puzzle1C.jpg" />
+    <None Include="Resources\puzzle1B.jpg" />
+    <None Include="Resources\puzzle1A.jpg" />
+    <None Include="Resources\arrowBurlyTwo.png" />
+    <None Include="Resources\arrowWhite.png" />
+    <None Include="Resources\arrowBurly.png" />
+    <None Include="Resources\buttonRedQ1.png" />
+    <None Include="Resources\arrowGrey.png" />
+    <None Include="Resources\wallpaperDiff10.jpg" />
+    <None Include="Resources\wallpaperDiff9.jpg" />
+    <None Include="Resources\wallpaperDiff8.jpg" />
+    <None Include="Resources\wallpaperDiff7.jpg" />
+    <None Include="Resources\wallpaperDiff6.jpg" />
+    <None Include="Resources\wallpaperDiff5.jpg" />
+    <None Include="Resources\wallpaperDiff4.jpg" />
+    <None Include="Resources\wallpaperDiff3.jpg" />
+    <None Include="Resources\wallpaperDiff1.jpg" />
+    <None Include="Resources\wallpaperDiff2.jpg" />
+    <None Include="Resources\circle4.png" />
+    <None Include="Resources\writersBg.txt" />
+    <None Include="Resources\vegies.txt" />
+    <None Include="Resources\townsBg.txt" />
+    <None Include="Resources\storiesBg.txt" />
+    <None Include="Resources\sports.txt" />
+    <None Include="Resources\singersWorld.txt" />
+    <None Include="Resources\singersBg.txt" />
+    <None Include="Resources\sightsWorld.txt" />
+    <None Include="Resources\sightsBg.txt" />
+    <None Include="Resources\romeGods.txt" />
+    <None Include="Resources\riversBg.txt" />
+    <None Include="Resources\reptiles.txt" />
+    <None Include="Resources\presUSA.txt" />
+    <None Include="Resources\poemsBg.txt" />
+    <None Include="Resources\novelsBg.txt" />
+    <None Include="Resources\nobelLaur.txt" />
+    <None Include="Resources\musicBands.txt" />
+    <None Include="Resources\mountBg.txt" />
+    <None Include="Resources\mammals.txt" />
+    <None Include="Resources\jobs.txt" />
+    <None Include="Resources\historyWorld.txt" />
+    <None Include="Resources\historyBg.txt" />
+    <None Include="Resources\greekGods.txt" />
+    <None Include="Resources\fruits.txt" />
+    <None Include="Resources\footballWorld.txt" />
+    <None Include="Resources\footballTeams.txt" />
+    <None Include="Resources\footballBg.txt" />
+    <None Include="Resources\fish.txt" />
+    <None Include="Resources\egyptGods.txt" />
+    <None Include="Resources\dogTypes.txt" />
+    <None Include="Resources\dances.txt" />
+    <None Include="Resources\currency.txt" />
+    <None Include="Resources\chemists.txt" />
+    <None Include="Resources\chemElements.txt" />
+    <None Include="Resources\birds.txt" />
+    <None Include="Resources\amphibians.txt" />
+    <None Include="Resources\actorsWorld.txt" />
+    <None Include="Resources\actorsBg.txt" />
+    <None Include="Resources\stickmanDead.png" />
+    <None Include="Resources\wallpaperHangman.jpg" />
+    <None Include="Resources\hangman6dead.png" />
+    <None Include="Resources\hangman5.png" />
+    <None Include="Resources\hangman4.png" />
+    <None Include="Resources\hangman3.png" />
+    <None Include="Resources\hangman2.png" />
+    <None Include="Resources\hangman1.png" />
+    <None Include="Resources\hangman0.png" />
+    <None Include="Resources\wallpaperEndFrame2.jpg" />
+    <None Include="Resources\buttonBrownOkBig.png" />
+    <None Include="Resources\buttonBrownOk.png" />
+    <None Include="Resources\HintMessageForm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\Music\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
